@@ -1,0 +1,39 @@
+1. Differences between stateless and stateful components: 
+- Stateful Component: Can be both Class-based and Functional 
+components. Stateful components are components that manage state
+
+- Stateless Components: is the Functional Component that doesn't 
+manage state
+
+2. Differences between Class-based and Functional components: 
+- Class-based Component: 
++, Components that having a Class that extends the Components object
++, Use Lifecycle Hooks
++, Access State and Props via "this" keyword
++, Use class-based if you need to manage State or access to 
+Lifecycle Hooks and you dont want to use React Hooks
+
+- Functional Component: 
++, Components that have a Function that is passed prop in
++, Have access to Hooks but doesn't have Lifecycle Hooks
++, Access Props via "Props"
++, Use in all other Cases
+
+3. Component Lifecycle: 
+- Component Lifecycle is only available in Class-based
+Component. There are Different methods running in the 
+background when a components got created
+- See the order of these components in Lifecycle.pdf
+
+What does each methods do: 
+- constructor(): run when a component is created. 
+Can do basic initialization
+- getDerivedStateFromProps(): hooks to use to update the 
+state. Don't send request here
+- render(): render the JSX code, Don't send request here
+- Render Child Component: self explained 
+- componentDidMount(): can make request here to get response. 
+Can do async code here
+
+See the use of this function in App.js, 
+Hit the button, watch the console log to see the output
