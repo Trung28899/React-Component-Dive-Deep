@@ -20,7 +20,7 @@ Lifecycle Hooks and you dont want to use React Hooks
 +, Access Props via "Props"
 +, Use in all other Cases
 
-3. Component Lifecycle: 
+3. Creating Component Lifecycle: 
 - Component Lifecycle is only available in Class-based
 Component. There are Different methods running in the 
 background when a components got created
@@ -40,5 +40,5 @@ See the use of this function in App.js,
 Hit the button, watch the console log to see the output
 NOTE THAT: SEE 1ST AND 2ND COMMIT FOR CODING OF THIS PART
 
-END OF 1ST AND 2ND COMMIT
+END OF 1ST till 4TH COMMIT
 ---------------------------------------------------------------------
