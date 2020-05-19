@@ -3,7 +3,7 @@ import Person from "./Person/Person";
 
 // Person Listing Component
 // Commit 5th changed to class based
-// Demo of Update Component LifeCycle here:
+// Demo of Update Component LifeCycle for props update here:
 class Persons extends Component {
   // Comment since not really using it
   // static getDerivedStateFromProps(props, state) {
