@@ -79,11 +79,12 @@ called in the code. However, it is executed in the background, that's
 why you see it is running in the console.
 > this is the whole point of Lifecycle
 
-- Updation Lifecycle (for props): See in Persons.js. Same
-thing need to notice as Creation Lifecycle
+- Updation Lifecycle (for props): See in Persons.js. Remember to 
+type in textbox for to see more output. Same thing need to notice 
+as Creation Lifecycle
 
-- Updation Lifecycle (for state): See in App.js. Same
-thing need to notice
+- Updation Lifecycle (for state): See in App.js. Remember to click
+button to see more output. Same thing need to notice
 
-END OF 5TH till 6TH COMMIT
+END OF 5TH till 7TH COMMIT
 ---------------------------------------------------------------------
