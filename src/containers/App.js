@@ -26,10 +26,10 @@ class App extends Component {
     return state;
   }
 
-  // Not really useful
-  componentWillMount() {
-    console.log("[App.js] componentWillMount");
-  }
+  // Not really useful, current version not using that anymore
+  // componentWillMount() {
+  //   console.log("[App.js] componentWillMount");
+  // }
 
   // Can put async code here to send request
   componentDidMount() {

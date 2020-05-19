@@ -42,3 +42,15 @@ NOTE THAT: SEE 1ST AND 2ND COMMIT FOR CODING OF THIS PART
 
 END OF 1ST till 4TH COMMIT
 ---------------------------------------------------------------------
+4. Update Component Lifecycle: 
+- getDerivedStateFromProps(): used for updating state and initialize 
+props. Dont send requests
+- shouldComponentUpdate(nextProp, nextState): Cancel the updating process
+, cancel unneccessary updates. Dont send requests here
+- render(): construct the JSX
+- Update Child Component Props
+- getSnapshotBeforeUpdate(prevProps, prevState): takes previous props 
+and states, return an object of props and object to perform Last-minute
+DOM operations. Dont send requests here
+- componentDidUpdate(): Signal the completion of updating. Can send 
+request here. Dont update state here
