@@ -88,3 +88,37 @@ button to see more output. Same thing need to notice
 
 END OF 5TH till 7TH COMMIT
 ---------------------------------------------------------------------
+4. Using useEffect(): 
+a. What is it ? 
+- The 2nd most important React hook, next to useState
+- It is a React Hook, not a method Lifecycle hooks like those above
+- It combine all the functionalities of all the class-based 
+Lifecycle hooks. It is a function you can add into one of your functional
+components
+
+b. How to use it ?
+- See example of Cockpit.js
+- Targeting what data that you want to take effect: 
++, passing targeted props as a 2nd function for useEffect()
++, If the argument is not passed, when we toggle the button, 
+the operation will not be activated
++, If nothing is passed, with every operation, the action 
+will be activated
+
+5. Cleaning up: 
+a. What is it ?
+- Lifecycle method for class based or useEffect for
+functional component
+- Purpose: clean up some event listener, disable it when needed
+
+b. How to do it ? 
+- See componentWillUnmount() in Persons.js
+- See the return function of useEffect() in Cockpit.js. 
++, The function returned in useEffect() will run before the 
+main useEffect function runs but after the first render cycle
+
+- See 2 useEffect() in Cockpit.js, shouldComponentUpdate() in App.js
+is also updated
+
+
+---------------------------------------------------------------------
