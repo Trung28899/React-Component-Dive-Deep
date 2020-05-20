@@ -117,8 +117,9 @@ b. How to do it ?
 +, The function returned in useEffect() will run before the 
 main useEffect function runs but after the first render cycle
 
-- See 2 useEffect() in Cockpit.js, shouldComponentUpdate() in App.js
-is also updated
+- See 2 useEffect() in Cockpit.JS
+- See how timer got removed in Cockpit.js to see how cleanup
+work in useEffect() work
 
-
+END OF 8TH - 9TH COMMIT
 ---------------------------------------------------------------------
