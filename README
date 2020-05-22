@@ -163,3 +163,10 @@ without having to code anything further
 
 END OF 11ST - 12ND COMMIT
 ---------------------------------------------------------------------
+8. Higher Order Component: 
+- HOC is a component that wraps around another component
+providing more utilities for the component that it wraps
+
+- 1st Way of using HOC > see commit 13rd
+> Look in App.js how WithClass is used, 
+import, and coded
