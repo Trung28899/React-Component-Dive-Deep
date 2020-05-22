@@ -132,4 +132,29 @@ in the commented code
 
 END OF 10TH COMMIT
 ---------------------------------------------------------------------
+6. How React Updates the DOM: 
+- See the map at 2:44 of video 101 to understand how
+- React keeps 2 virtual DOM: 
++, The Old virtual DOM and the re-rendered DOM
+> check for Differences and update only what changed
 
+---------------------------------------------------------------------
+7. Rendering Adjacent JSX: 
+- In JSX, we can only return 1 html element with Child
+elements within them. For example, you can not return 
+two <div> next to each other.
+
+- However, If you really need to return 2 elements next to 
+each other, there is a way around it: 
++, return an array of different Adjacent elements:
+Video 102, Bookmark 1: show the 1st way of doing it 
+
++, Use higher order component, see the example in 
+Person.js: 
+> How to import the Auxi element
+> see in hoc/Auxi.js
+> How to use the Auxi element
+
+
+END OF 11ST COMMIT
+---------------------------------------------------------------------
