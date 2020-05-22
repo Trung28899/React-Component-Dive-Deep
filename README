@@ -170,3 +170,10 @@ providing more utilities for the component that it wraps
 - 1st Way of using HOC > see commit 13rd
 > Look in App.js how WithClass is used, 
 import, and coded
+
+- 2nd Way of using HOC > see commit 14th
+> Look in App.js, how withClass is imported, 
+exported and coded
+
+END OF 13RD - 14TH COMMIT
+---------------------------------------------------------------------
