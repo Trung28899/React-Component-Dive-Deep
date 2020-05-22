@@ -123,3 +123,13 @@ work in useEffect() work
 
 END OF 8TH - 9TH COMMIT
 ---------------------------------------------------------------------
+From Optimization to PureComponent > Doesn't understand
+
+COMMIT 10TH: PureComponent in Persons.js: 
++, Replace import { Component } with { PureComponent }
++, automatically do the work of shouldComponentUpdate() 
+in the commented code
+
+END OF 10TH COMMIT
+---------------------------------------------------------------------
+

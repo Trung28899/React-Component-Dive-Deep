@@ -1,45 +1,49 @@
-import React, { Component } from "react";
-import Person from "./Person/Person";
+import React, { PureComponent } from 'react';
 
-// Person Listing Component
-// Commit 5th changed to class based
-// Demo of Update Component LifeCycle for props update here:
-class Persons extends Component {
-  // Comment since not really using it
+import Person from './Person/Person';
+
+class Persons extends PureComponent {
   // static getDerivedStateFromProps(props, state) {
-  //   console.log("[Persons.js] getDerivedStateFromProps");
+  //   console.log('[Persons.js] getDerivedStateFromProps');
   //   return state;
   // }
 
-  // Not used cause the current version is not supporting anymore
   // componentWillReceiveProps(props) {
-  //   console.log("[Person.js] componentWillReceiveProps", props);
+  //   console.log('[Persons.js] componentWillReceiveProps', props);
   // }
 
-  shouldComponentUpdate(nextProps, nextState) {
-    console.log("[Person.js] shouldComponentUpdate");
-    // true > keep updating
-    // false > cancle update
-    return true;
+  // shouldComponentUpdate(nextProps, nextState) {
+  //   console.log('[Persons.js] shouldComponentUpdate');
+  //   if (nextProps.persons !== this.props.persons 
+  //     || nextProps.changed !== this.props.changed ||
+  //     nextProps.clicked !== this.props.clicked) {
+  //     return true;
+  //   } else {
+  //     return false;
+  //   }
+  //   // return true;
+  // }
+
+  getSnapshotBeforeUpdate(prevProps, prevState) {
+    console.log('[Persons.js] getSnapshotBeforeUpdate');
+    return { message: 'Snapshot!' };
   }
 
-  getSnapshotBeforeUpdate(preProps, prevState) {
-    console.log("[Person.js] getSnapshotBeforeUpdate");
-    return { message: "Snapshot !" };
-  }
+  // componentWillUpdate() {
+
+  // }
 
   componentDidUpdate(prevProps, prevState, snapshot) {
-    console.log("[Persons.js] componentDidUpdate");
+    console.log('[Persons.js] componentDidUpdate');
     console.log(snapshot);
   }
 
   componentWillUnmount() {
-    // Hit toggle twice to see this
-    console.log("[Persons.js] Component will mother fker unmount");
+    console.log('[Persons.js] componentWillUnmount');
   }
 
   render() {
-    console.log("[Persons.js] rendering...");
+    console.log('[Persons.js] rendering...');
     return this.props.persons.map((person, index) => {
       return (
         <Person
@@ -47,7 +51,7 @@ class Persons extends Component {
           name={person.name}
           age={person.age}
           key={person.id}
-          changed={(event) => this.props.changed(event, person.id)}
+          changed={event => this.props.changed(event, person.id)}
         />
       );
     });
