@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
-import Auxi from '../../../hoc/Auxi'
+import Auxi from '../../../hoc/Auxi'; 
+import withClass from '../../../hoc/WithClass'; 
 import classes from './Person.css';
 
 class Person extends Component {
@@ -21,4 +22,4 @@ class Person extends Component {
   }
 }
 
-export default Person;
+export default withClass(Person, classes.Person);

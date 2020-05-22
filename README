@@ -175,5 +175,8 @@ import, and coded
 > Look in App.js, how withClass is imported, 
 exported and coded
 
-END OF 13RD - 14TH COMMIT
+- Passing props with HOC: see WithClass.js and Person.js
+commit 15TH
+
+END OF 13RD - 15TH COMMIT
 ---------------------------------------------------------------------
