@@ -150,11 +150,16 @@ each other, there is a way around it:
 Video 102, Bookmark 1: show the 1st way of doing it 
 
 +, Use higher order component, see the example in 
-Person.js: 
+Person.js commit 11st
 > How to import the Auxi element
 > see in hoc/Auxi.js
 > How to use the Auxi element
 
++, Use Fragment, see example in Person.js commit
+12nd
+> See how to import Fragment
+> Fragment is used exactly like <Auxi>
+without having to code anything further
 
-END OF 11ST COMMIT
+END OF 11ST - 12ND COMMIT
 ---------------------------------------------------------------------
