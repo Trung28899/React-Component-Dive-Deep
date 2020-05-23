@@ -202,5 +202,48 @@ the correct datatype
 - Cockpit.js: See the usage of ref attribute in the button tag
 (functional component approach)
 
-END OF 16TH COMMIT
+END OF 16TH, 17TH COMMIT
+---------------------------------------------------------------------
+11. Using Context: 
+a. Problem: 
+- If we have components within components, it's uncovenient
+to pass props from Component A -> B -> C
+- This is why we use Context, we can store info
+in Context to pass info directly from A -> C
+
+b. How we do it ?
+- Create a new context folder > goes to 
+context/auth-context.js
+to see how to make a context file
+
+- Output expected: 
+Hit Toggle button > Hit login button 
+> heading in each person should change from
+'Please Login' to 'Authenticated'
+
+- Goes to App.js, Cockpit.js, Person.js, 
+look for <AuthContext> tag to see how to use, 
+and import it
+
+- <AuthContext.Provider>: provide the info value
+<AuthContext.Comsumer>: use the info value of the
+context
+
+c. Faster Way of doing it: 
+- Using contextType: for classBased
+- Using useContext() for functional
+
+---------------------------------------------------------------------
+Sum up modules: 
+- Dive deep about components, its lifecycle, its
+available tools and how to pass and retrieve data
+properly
+
+- Cockpit.js: show how to do things in functional
+component
+
+- Person.js, Persons.js: show how to do things
+in class based component. 
+
+END OF 18TH COMMIT
 ---------------------------------------------------------------------

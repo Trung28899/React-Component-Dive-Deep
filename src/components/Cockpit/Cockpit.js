@@ -1,11 +1,13 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useContext } from "react";
 
 import classes from "./Cockpit.css";
+import AuthContext from "../../context/auth-context";
 
 const cockpit = (props) => {
   // Creating a new reference
   // same as: React.createRef() in class-based
   const toggleBtnRef = useRef(null);
+  const authContext = useContext(AuthContext);
 
   useEffect(() => {
     console.log("[Cockpit.js] useEffect");
@@ -49,6 +51,15 @@ const cockpit = (props) => {
       <button ref={toggleBtnRef} className={btnClass} onClick={props.clicked}>
         Toggle Persons
       </button>
+      {
+        // Using this when we dont have const authContext = useContext(AuthContext);
+        // Remember to get rid of the curly brackets, just using it to
+        // Comment
+        // <AuthContext.Consumer>
+        // {(context) => <button onClick={context.login}>Login</button>}
+        // </AuthContext.Consumer>
+      }
+      <button onClick={authContext.login}>Login</button>
     </div>
   );
 };
