@@ -180,3 +180,24 @@ commit 15TH
 
 END OF 13RD - 15TH COMMIT
 ---------------------------------------------------------------------
+9. Update state properly: 
+- App.js within nameChangedHandler, the setState() is done
+differently
+
+10. Using PropTypes: 
+- Used to restrict the datatype that is passed by Props
+
+- installation package: 
+npm install --save prop-type
+
+- See usage in Person.js (PropsType)
+try change the state.persons[0].age to a string in 
+App.js > there will be a warning that talk about
+the correct datatype
+
+11. Using ref: 
+- Person.js: See the usage of ref attribute in the input tag
+(Class-based approach)
+
+- Cockpit.js: See the usage of ref attribute in the button tag
+(functional component approach)
