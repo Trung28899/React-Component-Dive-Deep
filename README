@@ -234,7 +234,10 @@ c. Faster Way of doing it:
 - Using useContext() for functional
 
 ---------------------------------------------------------------------
-Sum up modules: 
+Sum up modules: THIS MODULE IS A REFERENCE MODULE
+FOR USEFUL TOOLS THAT CAN BE USED IN REACT FOR REACT 
+OPERATIONS
+
 - Dive deep about components, its lifecycle, its
 available tools and how to pass and retrieve data
 properly
@@ -245,5 +248,17 @@ component
 - Person.js, Persons.js: show how to do things
 in class based component. 
 
-END OF 18TH COMMIT
+---------------------------------------------------------------------
+USEFUL LINKS AND REFERENCES: 
+
+More on useEffect(): https://reactjs.org/docs/hooks-effect.html
+
+State & Lifecycle: https://reactjs.org/docs/state-and-lifecycle.html
+
+PropTypes: https://reactjs.org/docs/typechecking-with-proptypes.html
+
+Higher Order Components: https://reactjs.org/docs/higher-order-components.html
+
+
+END OF COMMIT 18TH - 19TH
 ---------------------------------------------------------------------
